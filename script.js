@@ -1,4 +1,5 @@
-const form = document.getElementById("box-container");
+function calculateBMI(){
+    const form = document.getElementById("box-container");
 const weightinput = document.getElementById("weight");
 const heightinput = document.getElementById("height");
 const resultdiv = document.getElementById("result");
@@ -8,20 +9,20 @@ const height = parseFloat(heightinput.value);
 
 if(weight && height)
 {
-    const bmi = calculateBMI(weight,height);
+    const bmi = calculateBMIValue(weight,height);
     const category = categorizeBMI(bmi);
-
-    resultdiv.innerText = 'Your BMI is ${bmi}.You are ${category}.';
+    resultdiv.innerText = `Your BMI is ${bmi}. You are ${category}.`;
 }
 else
 {
     resultdiv.innerText = 'Please enter valid weight and height values.';
 }
+}
 
-function calculateBMI(weight,height){
+function calculateBMIValue(weight,height){
     const heightsquare = height * height;
-    const bmi = weight / heightsquare;
-    return math.round(bmi * 100) / 100;
+    const bmi = weight / heightsquare *10000;
+    return Math.round(bmi * 100) / 100;
 }
 
 function categorizeBMI(bmi){
