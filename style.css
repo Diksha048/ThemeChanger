@@ -1,4 +1,4 @@
-/* style.css */
+
 
 body {
     font-family: Arial, sans-serif;
@@ -9,13 +9,14 @@ body {
 .BMIbox{
     height: 650px;
     width: 900px;
-    margin: 70px;
+    margin: 30px;
     border: 1px solid #ccc;
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: slategrey;
+    position: relative;
 }
 .box-container{
     background-color: #DEE2E6;
@@ -74,4 +75,19 @@ button[type="button"]:hover {
     font-size: 18px;
     font-weight: bold;
     color: #666;
+}
+.sun-img{
+    height: 55px;
+    margin-top: 20px;
+}
+.moon-img{
+    height: 45px;
+    margin: 10px;
+    margin-top: 23px;
+}
+.theme-selector-container{
+    display: flex;
+    position:fixed;
+    top: 20px;
+    right: 350px;
 }
