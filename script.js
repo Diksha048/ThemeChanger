@@ -55,14 +55,17 @@ function enabledark()
     mainBody.classList.remove("bg-light");
 
     const Boxcontainer = document.getElementById("box-container");
+    Boxcontainer.classList.remove("box-container-light")
     Boxcontainer.classList.add("box-container-dark");
-
-    const buttoncontainer = document.getElementById("button");
-    Boxcontainer.classList.add("button-bg");
 
     const resultbg = document.getElementById("result");
     resultbg.classList.add("result-bg");
 
+    const heading = document.getElementById("h1");
+    resultbg.classList.add("h1-bg");
+
+    const Body= document.getElementById("bodycontain");
+    resultbg.classList.add("body-bg");
 }
 
 function enablelight()
@@ -70,4 +73,14 @@ function enablelight()
     const mainBody = document.getElementById("main-body");
     mainBody.classList.add("bg-light");
     mainBody.classList.remove("bg-dark");
+
+    const Boxcontainer = document.getElementById("box-container");
+    Boxcontainer.classList.add("box-container-light");
+
+    const resultbg = document.getElementById("result");
+    resultbg.classList.add("result-bg");
+
+    const heading = document.getElementById("h1");
+    resultbg.classList.add("h1-bg");
+
 }
