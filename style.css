@@ -52,7 +52,7 @@ input[type="number"] {
     border: 1px solid #ccc;
 }
 
-button[type="button"] {
+.button {
     width: 90%;
     height: 40px;
     background-color: #333399;
@@ -66,7 +66,7 @@ button[type="button"] {
     margin-right: 20px;
 }
 
-button[type="button"]:hover {
+.button:hover {
     background-color: #6666cc;
 }
 
@@ -79,15 +79,39 @@ button[type="button"]:hover {
 .sun-img{
     height: 55px;
     margin-top: 20px;
+    cursor: pointer;
 }
 .moon-img{
     height: 45px;
     margin: 10px;
     margin-top: 23px;
+    cursor: pointer;
 }
 .theme-selector-container{
     display: flex;
     position:fixed;
     top: 20px;
     right: 350px;
+}
+.bg-dark{
+    background-color: #5c5c8a;
+    color: #fff;
+}
+.bg-light{
+    background-color:  #336699;
+    color: #212529;
+}
+.box-container-dark{
+    background-color:  #a3a3c2;
+    color: #fff;
+}
+.box-container-light{
+    background-color: #b3cce6;
+    color:black;
+}
+#result-bg{
+    color: #fff;
+}
+.h1-bg{
+    color: #fff;
 }
