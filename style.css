@@ -7,7 +7,7 @@ body {
 }
 
 .BMIbox{
-    height: 600px;
+    height: 650px;
     width: 900px;
     margin: 70px;
     border: 1px solid #ccc;
@@ -27,7 +27,7 @@ h1{
 }
 form {
     width: 300px;
-    height: 350px;
+    height: 400px;
     margin: 50px auto;
     padding: 20px;
     color: #212529;
@@ -51,7 +51,7 @@ input[type="number"] {
     border: 1px solid #ccc;
 }
 
-button[type="submit"] {
+button[type="button"] {
     width: 90%;
     height: 40px;
     background-color: #333399;
@@ -65,7 +65,7 @@ button[type="submit"] {
     margin-right: 20px;
 }
 
-button[type="submit"]:hover {
+button[type="button"]:hover {
     background-color: #6666cc;
 }
 
